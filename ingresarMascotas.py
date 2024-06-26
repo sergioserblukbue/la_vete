@@ -1,23 +1,22 @@
-def ingresarMascota(listMascotas=[]):
+def ingresarMascota(listaMacotas=[]):
     print("Ingreso de mascotas".center(60," "))
     print("="*60)
     nombre=input("ingrese el nombre de la mascota: ")
-    anioNac=int(input("ingrese el año de nacimiento: "))
+    anioNac=input("ingrese el año de nacimiento: ")
     raza=input("ingrese la raza: ")
     tipo=input("ingrese el tipo: ")
-    sexo=input("ingrese el sexo:")
-    lista=[]
+    sexo=input("ingrese el sexo: ")
     dniPropietario=input("ingrese el dni del dueño: ")
-    listMascotas.append({
+    listaMacotas.append({
         "nombre":nombre,
         "anioNac":anioNac,
         "raza":raza,
         "tipo":tipo,
         "sexo":sexo,
-        "procedimientos":lista,
+        "procedimientos":[],
         "dniPropietario":dniPropietario
     })
-    print("se agrego una nueva mascota!")
-    print(listMascotas)
+    print("mascota agregada correctamente!")
+    print(listaMacotas)
     input("enter para continuar...")
     return
