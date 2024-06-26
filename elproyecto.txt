@@ -1,0 +1,19 @@
+un proyecto para una veterinaria de pequeños animales
+1- registro de mascotas (listMascotas=[])
+    nombre
+    año de nac
+    raza
+    tipo
+    sexo
+    lista<procedimientos>
+    dni_dueño
+2-stock de productos
+    codigo
+    nombre
+    descripcion
+    existencia
+    precio_venta
+
+para el registro de mascotas 
+    una lista con un diccionario dentro con las claves desc
+para stock de productos una lista de diccionarios
