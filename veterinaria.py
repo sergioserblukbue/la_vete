@@ -1,4 +1,7 @@
 import os
+from listarMascotas import listarMascotas
+from buscarMascota import buscarMascota
+from eliminarMascota import eliminarMascota
 from ingresarMascota import ingresarMascota
 def limpiarPantalla():
     os.system("cls" if os.name == "nt" else "clear")
@@ -27,19 +30,19 @@ def menu_mascotas():
         if op=="1":
             ingresarMascota(listMascotas)
             input()
-            pass
         elif op=="2":
             input()
             pass
         elif op=="3":
-            input()
-            pass
+            eliminarMascota(listMascotas)
+            input("presione enter para continuar....")
         elif op=="4":
+            #listar mascotas
+            listarMascotas(listMascotas)
             input()
-            pass
         elif op=="5":
+            buscarMascota(listMascotas)
             input()
-            pass
         elif op=="6":
             break
         else:
