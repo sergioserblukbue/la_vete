@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "pepe",
+        "anioNac": "2020",
+        "raza": "perico",
+        "tipo": "loro",
+        "sexo": "macho",
+        "procedimientos": [],
+        "dniPropietario": "2525"
+    },
+    {
+        "nombre": "capitan",
+        "anioNac": "2021",
+        "raza": "dogo",
+        "tipo": "perro",
+        "sexo": "m",
+        "procedimientos": [],
+        "dniPropietario": "2020"
+    }
+]

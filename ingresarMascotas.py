@@ -1,3 +1,4 @@
+from persistencia import guardarDatos
 def ingresarMascota(listaMacotas=[]):
     print("Ingreso de mascotas".center(60," "))
     print("="*60)
@@ -16,6 +17,7 @@ def ingresarMascota(listaMacotas=[]):
         "procedimientos":[],
         "dniPropietario":dniPropietario
     })
+    guardarDatos(listaMacotas)
     print("mascota agregada correctamente!")
     print(listaMacotas)
     input("enter para continuar...")

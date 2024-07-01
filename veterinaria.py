@@ -1,4 +1,8 @@
-import os 
+import os
+from buscarMascotas import buscarMascotas
+from listarMascotas import listarMascotas 
+from eliminarMascotas import eliminarMascota
+from persistencia import *
 from ingresarMascotas import ingresarMascota
 def limpiarPantalla():
     os.system("cls" if os.name=="nt" else "clear" )
@@ -21,7 +25,7 @@ def menuMascotas():
         print("2 modificar datos de mascotas")
         print("3 eliminar datos mascota")
         print("4 listar mascotas")
-        print("5 cargar procedimiento")
+        print("5 buscar Mascota")
         print("6 regresar al menu principal")
         op = input("seleccione una opcion: ")
         if op =="1":
@@ -29,18 +33,21 @@ def menuMascotas():
         elif op =="2":
             pass
         elif op =="3":
-            pass
+            eliminarMascota(listaMascotas)
+            input("enter para continuar....")
         elif op =="4":
-            pass
+            listarMascotas(listaMascotas)
+            input("presione enter para continuar...")
         elif op =="5":
-            pass
+            buscarMascotas(listaMascotas)
+            input("presione enter para continuar...")
         elif op =="6":
             break
         else:
             print("opcion incorrecta!")
             input("presione enter para continuar...")
 #aca inicia el programa
-listaMascotas=[]
+listaMascotas=cargarDatos()
 while True:
     op = menuPrincipal()
     if op=="1":
