@@ -1,4 +1,5 @@
 import os
+from modificarMascotas import modificarMascotas
 from buscarMascotas import buscarMascotas
 from listarMascotas import listarMascotas 
 from eliminarMascotas import eliminarMascota
@@ -31,7 +32,8 @@ def menuMascotas():
         if op =="1":
             ingresarMascota(listaMascotas)
         elif op =="2":
-            pass
+            modificarMascotas(listaMascotas)
+            input("enter para continuar....")
         elif op =="3":
             eliminarMascota(listaMascotas)
             input("enter para continuar....")
